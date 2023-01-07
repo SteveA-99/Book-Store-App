@@ -302,12 +302,7 @@ class orderMenu(QMainWindow):
             elif error == QMessageBox.No:
                 pass
 
-        """i = 0
-        instBook = bookMenu()
-        while i != len(self.df.id):
-            instBook.df.loc[instBook.df.number[i]] += 1
-            i += 1
-            #self.df.numberBook[i] += 1"""
+       
 
     def list(self):
         msg = QMessageBox()
@@ -363,7 +358,10 @@ class mainMenu(QMainWindow):
         self.orderButton.clicked.connect(lambda: self.order.display())
         self.show()
 
-
+## admin login 
+## username: mustafa
+## password: isNumberOne
+## Login in window
 class userLoginScreen(QMainWindow):
     def __init__(self):
         super(userLoginScreen, self).__init__()
